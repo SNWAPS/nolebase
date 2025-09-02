@@ -20,14 +20,14 @@ hero:
       text: 加入 Discord 服务器
       link: https://discord.gg/XuNFDcDZGj
     - theme: alt
-      text: GitHub 上浏览
-      link: https://github.com/nolebase/nolebase
+      text: 1
+      link: 
     - theme: alt
-      text: GitHub 上浏览
-      link: https://github.com/nolebase/nolebase
+      text: 2
+      link: 
     - theme: alt
-      text: GitHub 上浏览
-      link: https://github.com/nolebase/nolebase
+      text: 本知识库的GitHub源码
+      link: https://github.com/zgh2825902029/SPAWNS
 
 features:
   - title: test1
