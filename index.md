@@ -3,7 +3,7 @@ layout: home
 sidebar: false
 
 title: SPAWNS
-titleTemplate: 记录回忆，知识和畅想的地方
+titleTemplate: 也许大概可能应该
 
 hero:
   name: SPAWNS
