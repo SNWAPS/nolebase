@@ -1,6 +1,6 @@
 /** 文本 */
-export const siteName = 'SPAWNS'
-export const siteShortName = '知识库123'
+export const siteName = '宝山居士的知识库'
+export const siteShortName = '宝山居士的知识库'
 export const siteDescription = '宝山居士的知识库'
 
 /** 文档所在目录 */
