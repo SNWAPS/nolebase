@@ -14,11 +14,17 @@ hero:
     alt: Vitest
   actions:
     - theme: brand
-      text: 开始阅读
+      text: 笔记大纲
       link: /笔记/index
     - theme: alt
       text: 加入 Discord 服务器
       link: https://discord.gg/XuNFDcDZGj
+    - theme: alt
+      text: GitHub 上浏览
+      link: https://github.com/nolebase/nolebase
+    - theme: alt
+      text: GitHub 上浏览
+      link: https://github.com/nolebase/nolebase
     - theme: alt
       text: GitHub 上浏览
       link: https://github.com/nolebase/nolebase
