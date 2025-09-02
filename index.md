@@ -7,8 +7,8 @@ titleTemplate: 记录回忆，知识和畅想的地方
 
 hero:
   name: SPAWNS
-  text: 记录回忆，知识和畅想的地方
-  tagline: 以 SPAWNS 为名，读作 nole-base，取自意为「知识」的昆雅语 nólë 和意为「基础」的英文 base，即「知识库」
+  text: 干一行恨一行,三百六十行,行行都骂娘
+  tagline: 欢迎来到宝山居士的知识库，我正在编写关于配电自动化专业相关的内容，欢迎讨论交流。
   image:
     src: /logo.svg
     alt: Vitest
