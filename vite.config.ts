@@ -26,10 +26,10 @@ export default defineConfig(async () => {
       }),
       GitChangelogMarkdownSection({
         getChangelogTitle: (): string => {
-          return '文件历史'
+          return '更新历史'
         },
         getContributorsTitle: (): string => {
-          return '贡献者'
+          return '编辑者'
         },
         excludes: [
           'toc.md',
