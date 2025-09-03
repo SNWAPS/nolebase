@@ -7,8 +7,8 @@ titleTemplate:
 
 hero:
   name: I always love you
-  text: 干一行恨一行,三百六十行,行行都骂娘
-  tagline: 欢迎来到我的知识库，我正在编写关于配电自动化专业相关的内容，欢迎讨论交流。
+  text: 这是一个无聊的决定 
+  tagline:浪费时间 并没有什么灵感
   image:
     src: /logo.svg
     alt: Vitest
