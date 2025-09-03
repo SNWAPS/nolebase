@@ -7,8 +7,8 @@ titleTemplate:
 
 hero:
   name: I always love you
-  text: 这是一个无聊的决定 
-  tagline:浪费时间 并没有什么灵感
+  text: 这是一个私有知识库 重点在于私有
+  tagline:不参与直接讨论 因为我相当的固执
   image:
     src: /logo.svg
     alt: Vitest
