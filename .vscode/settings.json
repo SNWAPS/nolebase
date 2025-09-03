@@ -42,5 +42,6 @@
     "activityBar.background": "#3A2C04",
     "titleBar.activeBackground": "#523D05",
     "titleBar.activeForeground": "#FEFAED"
-  }
+  },
+  "markdown.validate.enabled": true
 }
