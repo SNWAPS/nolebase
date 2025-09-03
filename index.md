@@ -27,7 +27,7 @@ hero:
       link: 
     - theme: alt
       text: GitHub源码
-      link: https://github.com/zgh2825902029/SPAWNS
+      link: https://github.com/SNWAPS/SPAWNS
 
 features:
   - title: test1
