@@ -24,7 +24,7 @@ export const creators: Creator[] = [
     avatar: '123',
     username: 'SPAWNS',
     title: '大傻逼',
-    desc: '开发者，专注于基础设施维护，数据分析，后端、DevOps 开发',
+    desc: '装逼佬，高冷男，狂躁症，抑郁症',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/zgh2825902029' },
       { type: 'twitter', icon: 'twitter', link: '' },
