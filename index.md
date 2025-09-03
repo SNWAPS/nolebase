@@ -14,7 +14,7 @@ hero:
     alt: Vitest
   actions:
     - theme: brand
-      text: 笔记大纲
+      text: 交出焚决
       link: /笔记/index
     - theme: alt
       text: 0
