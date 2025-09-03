@@ -6,9 +6,9 @@ title: SPAWNS
 titleTemplate: 也许大概可能应该
 
 hero:
-  name: SPAWNS
+  name: 我爱你
   text: 干一行恨一行,三百六十行,行行都骂娘
-  tagline: 欢迎来到宝山居士的知识库，我正在编写关于配电自动化专业相关的内容，欢迎讨论交流。
+  tagline: 欢迎来到我的知识库，我正在编写关于配电自动化专业相关的内容，欢迎讨论交流。
   image:
     src: /logo.svg
     alt: Vitest
@@ -17,8 +17,8 @@ hero:
       text: 笔记大纲
       link: /笔记/index
     - theme: alt
-      text: 加入 Discord 服务器
-      link: https://discord.gg/XuNFDcDZGj
+      text: 0
+      link: 
     - theme: alt
       text: 1
       link: 
@@ -26,7 +26,7 @@ hero:
       text: 2
       link: 
     - theme: alt
-      text: 本知识库的GitHub源码
+      text: GitHub源码
       link: https://github.com/zgh2825902029/SPAWNS
 
 features:
