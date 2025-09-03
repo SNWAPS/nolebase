@@ -8,7 +8,7 @@ titleTemplate:
 hero:
   name: I always love you
   text: 这是一个私有知识库 重点在于私有
-  tagline:不参与直接讨论 因为我相当的固执
+  tagline: 脑残聚集地
   image:
     src: /logo.svg
     alt: Vitest
