@@ -28,7 +28,6 @@ export const creators: Creator[] = [
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
       { type: 'twitter', icon: 'twitter', link: '' },
-      { type: 'email', icon: 'email', link: '1835939062@qq.com' },
     ],
     nameAliases: ['0', '1', '2', '3', '4'],
     emailAliases: ['1835939062@qq.com'],
