@@ -21,10 +21,10 @@ const getAvatarUrl = (name: string) => `https://github.com/${name}.png`
 export const creators: Creator[] = [
   {
     name: 'SNWAPS',
-    avatar: '123',
+    avatar: '',
     username: '宝山居士',
     title: '大傻逼',
-    desc: '装逼佬，高冷男，狂躁症，抑郁症',
+    desc: '1123',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
       { type: 'twitter', icon: 'twitter', link: '' },
