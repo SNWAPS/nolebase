@@ -1,11 +1,8 @@
 ---
 tags:
   - 知识领域/文档工程
-progress: 1
 ---
 # 图表即代码（CaC）图表绘制
-
-CaC: Charts as Code
 
 ## 工具
 
