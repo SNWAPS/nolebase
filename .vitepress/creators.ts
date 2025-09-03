@@ -22,11 +22,11 @@ export const creators: Creator[] = [
   {
     name: '宝山居士',
     avatar: '123',
-    username: 'SPAWNS',
+    username: 'SNWAPS',
     title: '大傻逼',
     desc: '装逼佬，高冷男，狂躁症，抑郁症',
     links: [
-      { type: 'github', icon: 'github', link: 'https://github.com/zgh2825902029' },
+      { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
       { type: 'twitter', icon: 'twitter', link: '' },
       { type: 'email', icon: 'email', link: '1835939062@qq.com' },
     ],
