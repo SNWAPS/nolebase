@@ -6,7 +6,7 @@ title: SPAWNS
 titleTemplate: 也许大概可能应该
 
 hero:
-  name: 我爱你
+  name: I always love you
   text: 干一行恨一行,三百六十行,行行都骂娘
   tagline: 欢迎来到我的知识库，我正在编写关于配电自动化专业相关的内容，欢迎讨论交流。
   image:
