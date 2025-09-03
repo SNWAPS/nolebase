@@ -23,7 +23,7 @@ export const creators: Creator[] = [
     name: 'SNWAPS',
     avatar: '',
     username: 'SNWAPS',
-    title: '大傻逼',
+    title: '可能是一个傻逼',
     desc: '1123',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },

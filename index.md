@@ -2,8 +2,8 @@
 layout: home
 sidebar: false
 
-title: SPAWNS
-titleTemplate: 也许大概可能应该
+title: SPAWNS知识库
+titleTemplate: 
 
 hero:
   name: I always love you
