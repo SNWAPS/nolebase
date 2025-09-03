@@ -1,10 +1,8 @@
 ---
 layout: home
 sidebar: false
-
 title: SPAWNS知识库
-titleTemplate: 
-
+titleTemplate:
 hero:
   name: I always love you
   text: 这是一个私有知识库 重点在于私有
@@ -18,17 +16,16 @@ hero:
       link: /笔记/index
     - theme: alt
       text: 0
-      link: 
+      link:
     - theme: alt
       text: 1
-      link: 
+      link:
     - theme: alt
       text: 2
-      link: 
+      link:
     - theme: alt
       text: GitHub源码
       link: https://github.com/SNWAPS/SPAWNS
-
 features:
   - title: test1
     details: asd啊实打实打算
