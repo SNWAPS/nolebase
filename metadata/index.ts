@@ -12,6 +12,6 @@ export const githubRepoLink = 'https://github.com/zgh2825902029/SPAWNS'
 export const discordLink = ''
 
 /** 无协议前缀域名 */
-export const plainTargetDomain = 'spawns.cn'
+export const plainTargetDomain = 'spawns.cc'
 /** 完整域名 */
 export const targetDomain = `https://${plainTargetDomain}`

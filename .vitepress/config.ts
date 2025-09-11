@@ -117,6 +117,14 @@ export default defineConfig({
       rel: 'manifest',
       href: '/site.webmanifest',
     }],
+    [
+      'script',
+      {
+        defer: '',
+        src: 'https://static.cloudflareinsights.com/beacon.min.js',
+        'data-cf-beacon': '{"token": "ba0aaa257b3144d58debdb8b6be716d3"}'
+      }
+    ],
     ['meta', {
       name: 'msapplication-TileColor',
       content: '#603cba',
