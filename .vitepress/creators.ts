@@ -27,7 +27,6 @@ export const creators: Creator[] = [
     desc: '和你猜的不太一样',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
-      { type: 'email', icon: 'email', link: 'https://www.spawns.cn/about' },
     ],
     nameAliases: ['0', '1', '2', '3', '4'],
     emailAliases: ['1835939062@qq.com'],
