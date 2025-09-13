@@ -54,7 +54,6 @@ import 'virtual:uno.css'
 
 import '../styles/main.css'
 import '../styles/vars.css'
-import '../styles/git-changelog-override.css'
 
 import('@nolebase/vitepress-plugin-inline-link-preview/client')
 
@@ -113,7 +112,6 @@ const ExtendedTheme: Theme = {
       tags: string[]
       progress: number
     }>(), {
-
     })
   },
   setup() {
