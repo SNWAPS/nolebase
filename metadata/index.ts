@@ -7,9 +7,9 @@ export const siteDescription = 'SPAWNS知识库'
 export const include = ['笔记', '生活']
 
 /** Repo */
-export const githubRepoLink = 'https://github.com/zgh2825902029/SPAWNS'
+export const githubRepoLink = 'https://github.com/SNWAPS'
 /** Discord */
-export const discordLink = ''
+export const discordLink = 'https://www.spawns.cn'
 
 /** 无协议前缀域名 */
 export const plainTargetDomain = 'spawns.cc'

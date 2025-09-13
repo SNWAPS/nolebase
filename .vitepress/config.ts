@@ -134,20 +134,12 @@ export default defineConfig({
     ['script', { 'defer': 'true', 'data-domain': 'nolebase.ayaka.io', 'data-api': '/api/v1/page-external-data/submit', 'src': '/assets/page-external-data/js/script.js' }],
   ],
   themeConfig: {
-    outline: { label: '页面大纲', level: 'deep' },
+    outline: { label: 'On this page', level: 'deep' },
     darkModeSwitchLabel: '切换主题',
-    editLink: {
-      pattern: `${githubRepoLink}/tree/main/:path`,
-      text: '编辑本页面',
-    },
-    socialLinks: [
-      { icon: 'github', link: githubRepoLink },
-      { icon: 'discord', link: discordLink },
-    ],
     footer: {
       message: '用 <span style="color: #e25555;">&#9829;</span> 撰写',
       copyright:
-        '<a class="footer-cc-link" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> © 2025 SPAWNS',
+        'Copyright © 2025 SPAWNS. All Rights Reserved. ',
     },
     search: {
       provider: 'local',
@@ -216,12 +208,8 @@ export default defineConfig({
       },
     },
     nav: [
-      { text: '主页', link: '/' },
-      { text: '笔记', link: '/笔记/' },
-      { text: '最近更新', link: '/toc' },
-      { text: '最近更新', link: '/toc' },
+      { text: 'Blog', link: 'https://www.spawns.cn/' },
     ],
-    sidebar,
   },
   markdown: {
     theme: {
