@@ -211,7 +211,6 @@ export default defineConfig({
      nav: [
       { text: '主页', link: '/' },
       { text: '知识库', link: '/知识库/' },
-      { text: '数据库', link: '/数据库/' },
       { text: '最近更新', link: '/toc' },
     ],
   sidebar,
