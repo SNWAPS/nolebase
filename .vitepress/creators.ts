@@ -20,20 +20,20 @@ const getAvatarUrl = (name: string) => `https://github.com/${name}.png`
 
 export const creators: Creator[] = [
   {
-    name: 'SNWAPS',
-    avatar: '',
-    username: 'SNWAPS',
-    title: '可能是一个傻逼',
-    desc: '1123',
+    name: 'SPAWNS',
+    avatar: 'SNWAPS',
+    username: 'SPAWNS',
+    title: '宝山双红花棍 东海大街扛把子',
+    desc: '和你猜的不太一样',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
-      { type: 'twitter', icon: 'twitter', link: '' },
+      { type: '123', icon: 'twitter', link: 'https://www.spawns.cn/about' },
     ],
     nameAliases: ['0', '1', '2', '3', '4'],
     emailAliases: ['1835939062@qq.com'],
   },
 ].map<Creator>((c) => {
-  c.avatar = c.avatar || getAvatarUrl(c.username)
+  c.avatar = c.avatar || getAvatarUrl(c.name)
   return c as Creator
 })
 

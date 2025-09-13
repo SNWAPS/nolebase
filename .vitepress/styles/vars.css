@@ -27,17 +27,17 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-c-sky-1: #3c96ca;
-  --vp-c-sky-2: #49a1d4;
-  --vp-c-sky-3: #49a1d4;
-  --vp-c-sky-soft: rgba(73, 161, 212, 0.84);
+  --vp-c-sky-1: #4fc4d8;
+  --vp-c-sky-2: #4fc4d8;
+  --vp-c-sky-3: #4fc4d8;
+  --vp-c-sky-soft: #4fc4d8;
 }
 
 .dark {
-  --vp-c-sky-1: #49a3d7;
-  --vp-c-sky-2: #58b1e5;
-  --vp-c-sky-3: #58b1e5;
-  --vp-c-sky-soft: #58b1e5;
+  --vp-c-sky-1: #8d6fc7;
+  --vp-c-sky-2: #8d6fc7;
+  --vp-c-sky-3: #8d6fc7;
+  --vp-c-sky-soft: #8d6fc7;
 }
 
 /**

@@ -8,7 +8,7 @@ import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-in
 import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-image/vitepress'
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
-import { discordLink, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
+import { siteDescription, siteName, targetDomain } from '../metadata'
 import { creatorNames, creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
 
@@ -118,6 +118,7 @@ export default defineConfig({
       href: '/site.webmanifest',
     }],
     [
+      // Cloudflare WEB Analytics
       'script',
       {
         defer: '',
@@ -207,9 +208,7 @@ export default defineConfig({
         },
       },
     },
-    nav: [
-      { text: 'Blog', link: 'https://www.spawns.cn/' },
-    ],
+  sidebar,
   },
   markdown: {
     theme: {
