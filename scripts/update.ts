@@ -12,7 +12,7 @@ import TagsAlias from '../.vitepress/docsTagsAlias.json'
 import type { ArticleTree, DocsMetadata, DocsTagsAlias, Tag } from './types/metadata'
 
 const dir = './'
-const target = '知识库/'
+const target = '数据库/'
 const folderTop = true
 
 export const DIR_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')

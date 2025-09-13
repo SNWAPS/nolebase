@@ -65,7 +65,7 @@ export default defineConfig({
       {
         name: 'keywords',
         content:
-          ['markdown', 'knowledge-base', '知识库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
+          ['markdown', 'knowledge-base', '数据库', 'vitepress', 'obsidian', 'notebook', 'notes', ...creatorUsernames].join(', '),
       },
     ],
 
@@ -210,7 +210,7 @@ export default defineConfig({
     },
      nav: [
       { text: '主页', link: '/' },
-      { text: '知识库', link: '/知识库/' },
+      { text: '数据库', link: '/数据库/' },
       { text: '最近更新', link: '/toc' },
     ],
   sidebar,

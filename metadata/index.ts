@@ -1,10 +1,10 @@
 /** 文本 */
-export const siteName = 'SPAWNS知识库'
-export const siteShortName = 'SPAWNS知识库'
-export const siteDescription = 'SPAWNS知识库'
+export const siteName = 'SPAWNS数据库'
+export const siteShortName = 'SPAWNS数据库'
+export const siteDescription = 'SPAWNS数据库'
 
 /** 文档所在目录 */
-export const include = ['知识库']  
+export const include = ['数据库']  
 
 /** Repo */
 export const githubRepoLink = 'https://github.com/SNWAPS'

@@ -1,11 +1,11 @@
 ---
 layout: home
 sidebar: false
-title: 💬SPAWNS知识库
+title: 💬SPAWNS数据库
 titleTemplate: 世事难料，诸位慢行
 hero:
   name: I always love you
-  text: 一个私有知识库 
+  text: 一个私有数据库 
   tagline: 556
   image:
     src: /logo.svg
@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 大纲
-      link: /知识库/index
+      link: /数据库/index
     - theme: alt
       text: Blog
       link: https://www.spawns.cn/
