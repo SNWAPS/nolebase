@@ -1,7 +1,7 @@
 /** 文本 */
-export const siteName = 'SPAWNS数据库'
-export const siteShortName = 'SPAWNS数据库'
-export const siteDescription = 'SPAWNS数据库'
+export const siteName = 'SPAWNS的数据库'
+export const siteShortName = 'SPAWNS的数据库'
+export const siteDescription = 'SPAWNS的数据库'
 
 /** 文档所在目录 */
 export const include = ['数据库']  

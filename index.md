@@ -1,7 +1,7 @@
 ---
 layout: home
 sidebar: false
-title: 💬SPAWNS数据库
+title: 💬SPAWNS的数据库
 titleTemplate: 世事难料，诸位慢行
 hero:
   name: I always love you
