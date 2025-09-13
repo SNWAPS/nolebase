@@ -19,23 +19,23 @@ hero:
       link: https://www.spawns.cn/
 features:
   - title: test1
-    details: 1
+    details: test1
     icon: 🌈
   - title: test2
-    details: 2
+    details: test2
     icon: 📃
   - title: test3
-    details: 3
+    details: test3
     icon: 🚀
   - title: test4
-    details: 4
-    icon: 🗃
+    details: test4
+    icon: 💬
   - title: test5
-    details: 5
-    icon: 🗃
+    details: test5
+    icon: 🗨️
   - title: test6
-    details: 6
-    icon: 🗃
+    details: test6
+    icon: 💭
 ---
 
 <HomePage />
