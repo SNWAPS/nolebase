@@ -4,22 +4,26 @@ sidebar: false
 title: 💬SPAWNS的数据库
 titleTemplate: 世事难料，诸位慢行
 hero:
-  name: I always love
-  text: 一个私有数据库 
-  tagline: (⊙o⊙)…
+  name: 飞起来
+  text:  私有的数据库
+  tagline: 基于 VitePress 的个人前端导航页面模板
   image:
     src: /logo.svg
     alt: Vitest
   actions:
     - theme: brand
-      text: 大纲
+      text: 开始检索
       link: /数据库/index
+    - theme: alt
+      text: 待待用用
+      link: 
     - theme: brand
-      text: Blog
+      text: MyBlog
       link: https://www.spawns.cn/
     - theme: alt
-      text: 待用
+      text: 待待用用
       link: 
+
 features:
   - icon: 📖
     title: 前端物语
