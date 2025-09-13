@@ -22,18 +22,18 @@ export const creators: Creator[] = [
   {
     name: 'SPAWNS',
     avatar: 'SNWAPS',
-    username: 'SPAWNS',
+    username: 'SNWAPS',
     title: '宝山双红花棍 东海大街扛把子',
     desc: '和你猜的不太一样',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
-      { type: '123', icon: 'twitter', link: 'https://www.spawns.cn/about' },
+      { type: 'email', icon: 'email', link: 'https://www.spawns.cn/about' },
     ],
     nameAliases: ['0', '1', '2', '3', '4'],
     emailAliases: ['1835939062@qq.com'],
   },
 ].map<Creator>((c) => {
-  c.avatar = c.avatar || getAvatarUrl(c.name)
+  c.avatar = c.avatar || getAvatarUrl(c.username)
   return c as Creator
 })
 

@@ -51,8 +51,10 @@ import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
 import 'virtual:uno.css'
 
+
 import '../styles/main.css'
 import '../styles/vars.css'
+import '../styles/git-changelog-override.css'
 
 import('@nolebase/vitepress-plugin-inline-link-preview/client')
 
@@ -111,37 +113,7 @@ const ExtendedTheme: Theme = {
       tags: string[]
       progress: number
     }>(), {
-      properties: {
-        'zh-CN': [
-          {
-            key: 'tags',
-            type: 'tags',
-            title: '标签',
-          },
-          {
-            key: 'progress',
-            type: 'progress',
-            title: '完成进度',
-          },
-          {
-            key: 'wordCount',
-            type: 'dynamic',
-            title: '字数',
-            options: {
-              type: 'wordsCount',
-            },
-          },
-          {
-            key: 'readingTime',
-            type: 'dynamic',
-            title: '阅读时间',
-            options: {
-              type: 'readingTime',
-              dateFnsLocaleName: 'zhCN',
-            },
-          },
-        ],
-      },
+
     })
   },
   setup() {
