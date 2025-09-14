@@ -38,20 +38,20 @@ export default defineConfig({
       'link',
       {
         rel: 'apple-touch-icon',
-        href: '/apple-touch-icon.png',
+        href: '/tx.webp',
         sizes: '180x180',
       },
     ],
     ['link', {
       rel: 'icon',
-      href: '/logo.svg',
+      href: 'tx.webp',
       type: 'image/svg+xml',
     }],
     [
       'link',
       {
         rel: 'alternate icon',
-        href: '/favicon.ico',
+        href: '/tx.webp',
         type: 'image/png',
         sizes: '16x16',
       },

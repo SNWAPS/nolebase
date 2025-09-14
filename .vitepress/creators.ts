@@ -38,7 +38,7 @@ export const creators: Creator[] = [
     title: '一个人的时间精力毕竟是有限的',
     desc: '',
     links: [
-      { type: 'github', icon: 'github', link: 'https://github.com/' },
+      { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
     ],
     nameAliases: ['影分身'],
     emailAliases: [''],
