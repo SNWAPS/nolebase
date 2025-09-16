@@ -80,81 +80,13 @@ html, body {
   font-family: 'tengwarannatar-bold';
 }
 
-/* 首页子标题样式 - 同步的柔和彩虹渐变效果 */
+/* 首页子标题样式 */
 .VPHomeHero > .container > .main > .text {
   font-size: 3.5rem;
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 首页介绍样式 - 同步的柔和彩虹渐变效果 */
+/* 首页介绍样式 */
 .VPHomeHero > .container > .main > .tagline {
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-top: 10px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* 首页标题样式 - 同步的柔和彩虹渐变效果 */
-.VPHomeHero > .container > .main > h1 {
-  font-size: 3.5rem;
-  font-family: 'tengwarannatar-bold';
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 800;
-  letter-spacing: 2px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* 便签悬停效果 - 与按钮同步的缩放和光影效果 */
-.VPHomeHero > .container > .main > .text:hover,
-.VPHomeHero > .container > .main > .tagline:hover,
-.VPHomeHero > .container > .main > h1:hover {
-  transform: translateY(-3px) scale(1.02);
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation-duration: 4s;
-}
-
-/* 按钮悬停效果 - 增强动画、缩放和光影 */
-.VPHero.VPHomeHero .actions a:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-}
-
-/* 首页标题样式 - 同步的柔和彩虹渐变效果 */
-.VPHomeHero > .container > .main > h1 {
-  font-size: 3.5rem;
-  font-family: 'tengwarannatar-bold';
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 800;
-  letter-spacing: 2px;
 }
 
 /* 自适应样式 */
@@ -250,185 +182,78 @@ html, body {
   text-decoration: underline;
 }
 
-/* 首页子标题样式 - 同步的柔和彩虹渐变效果 */
-.VPHomeHero > .container > .main > .text {
-  font-size: 3.5rem;
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+/**
+  Discord 链接按钮样式
+*/
 
-/* 首页介绍样式 - 同步的柔和彩虹渐变效果 */
-.VPHomeHero > .container > .main > .tagline {
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-top: 10px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* 首页标题样式 - 柔和的彩虹渐变效果 */
-.VPHomeHero > .container > .main > h1 {
-  font-size: 3.5rem;
-  font-family: 'tengwarannatar-bold';
-  background: linear-gradient(-45deg, #a8edea, #fed6e3, #d299c2, #fef9d7);
-  background-size: 400% 400%;
-  animation: rainbowGradient 12s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  font-weight: 800;
-  letter-spacing: 2px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* 按钮 - 同步的柔和彩虹渐变效果 */
-.VPHero.VPHomeHero .actions a {
-  padding: 14px 28px;
-  font-size: 18px;
-  min-width: 160px;
-  text-align: center;
-  border-radius: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
+.VPHero.VPHomeHero .actions a[href="https://discord.gg/XuNFDcDZGj"] {
   color: white;
-  border: none;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-  text-transform: uppercase;
-  word-spacing: 2px;
+  background-color: #404eed;
 }
 
-/* 超级彩虹渐变动画 */
-@keyframes rainbowGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 100% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.VPHero.VPHomeHero .actions a[href="https://discord.gg/XuNFDcDZGj"]:hover {
+  color: white;
+  background-color: #6975f2;
 }
 
-/* 按钮悬停效果 - 增强动画、缩放和光影 */
-.VPHero.VPHomeHero .actions a:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
-  animation: rainbowGradient 4s ease infinite, pulseGlow 2s ease-in-out infinite;
+.VPHero.VPHomeHero .actions a[href="https://discord.gg/XuNFDcDZGj"]:active {
+  color: white;
+  background-color: #404eed;
 }
 
-/* 脉冲发光效果 */
-@keyframes pulseGlow {
-  0%, 100% {
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.4);
-  }
-  50% {
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.8);
-  }
+/**
+  暗色模式下 Discord 链接按钮样式
+*/
+
+.dark .VPHero.VPHomeHero .actions a[href="https://discord.gg/XuNFDcDZGj"] {
+  color: white;
+  background-color: #444c9e;
 }
 
-/* 多重光泽效果 */
-.VPHero.VPHomeHero .actions a::before {
-  content: '';
-  position: absolute;
-  top: -100%;
-  left: -100%;
-  width: 300%;
-  height: 300%;
-  background: linear-gradient(
-    45deg,
-    transparent 20%,
-    rgba(255, 255, 255, 0.1) 40%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.1) 60%,
-    transparent 80%
-  );
-  transform: rotate(45deg);
-  transition: all 0.8s ease;
-  opacity: 0;
-  animation: multiShine 3s linear infinite;
+.dark .VPHero.VPHomeHero .actions a[href="https://discord.gg/XuNFDcDZGj"]:hover {
+  color: white;
+  background-color: #404eed;
 }
 
-.VPHero.VPHomeHero .actions a:hover::before {
-  opacity: 1;
-  animation: multiShine 1.5s linear infinite;
+.dark .VPHero.VPHomeHero .actions a[href="https://discord.gg/XuNFDcDZGj"]:active {
+  color: white;
+  background-color: #444c9e;
 }
 
-@keyframes multiShine {
-  0% {
-    transform: translateX(-100%) translateY(-100%) rotate(45deg);
-  }
-  100% {
-    transform: translateX(100%) translateY(100%) rotate(45deg);
-  }
+/**
+  GitHub 链接按钮样式
+*/
+
+.VPHero.VPHomeHero .actions a[href="https://github.com/nolebase/integrations"] {
+  color: white;
+  background-color: #000;
 }
 
-/* 添加边框渐变动画 - 同步版本 */
-.VPHero.VPHomeHero .actions a::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
-  background-size: 600% 600%;
-  animation: borderRainbow 10s ease infinite;
-  border-radius: 16px;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+.VPHero.VPHomeHero .actions a[href="https://github.com/nolebase/integrations"]:hover {
+  color: white;
+  background-color: #4b4b4b;
 }
 
-.VPHero.VPHomeHero .actions a:hover::after {
-  opacity: 1;
+.VPHero.VPHomeHero .actions a[href="https://github.com/nolebase/integrations"]:active {
+  color: white;
+  background-color: #000;
 }
 
-@keyframes borderRainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/**
+  暗色模式下 GitHub 链接按钮样式
+*/
+
+.dark .VPHero.VPHomeHero .actions a[href="https://github.com/nolebase/integrations"] {
+  color: white;
+  background-color: #4b4b4b;
 }
 
-/* 按钮点击效果 - 弹性回弹 */
-.VPHero.VPHomeHero .actions a:active {
-  transform: translateY(-1px) scale(0.98);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  animation: none;
+.dark .VPHero.VPHomeHero .actions a[href="https://github.com/nolebase/integrations"]:hover {
+  color: white;
+  background-color: #252525;
+}
+
+.dark .VPHero.VPHomeHero .actions a[href="https://github.com/nolebase/integrations"]:active {
+  color: white;
+  background-color: #4b4b4b;
 }
