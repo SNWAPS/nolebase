@@ -15,7 +15,7 @@ hero:
       text: 开始检索
       link: /数据库/index
     - theme: alt
-      text: 待用用
+      text: 点点点
       link: 
 features:
   - title: 世事难料，我不知道。

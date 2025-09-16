@@ -379,7 +379,7 @@ async function run() {
   //'模板': '🎨',         // 模板图标
   //'脚本': '📜',         // 脚本图标
   //'数据': '📊',         // 数据图标
-  //
+   }
   // 为每个目录创建分组
   for (const targetDir of include) {
     const targetPath = `${targetDir}/`
