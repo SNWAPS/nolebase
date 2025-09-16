@@ -211,6 +211,13 @@ export default defineConfig({
      nav: [
       { text: '主页', link: '/' },
       { text: '数据库', link: '/数据库/' },
+      { text: 'Dropdown Menu',
+        items: [
+          { text: '1', link: '/数据库1/' },
+          { text: '2', link: '/数据库2/' },
+          { text: '3', link: '/数据库3/' }
+        ]
+      },
       { text: '最近更新', link: '/toc' },
     ],
   sidebar,
