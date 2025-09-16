@@ -211,14 +211,35 @@ export default defineConfig({
      nav: [
       { text: '主页', link: '/' },
       { text: '数据库', link: '/数据库/' },
-      { text: 'Dropdown Menu',
-        items: [
-          { text: '1', link: '/数据库1/' },
-          { text: '2', link: '/数据库2/' },
-          { text: '3', link: '/数据库3/' }
+      { text: '最近更新', link: '/toc' },
+      { text: '子标题嵌套', items: [
+          {
+            // 
+            text: '子标题',
+            items: [
+              { text: '标题1', link: '/' },
+              { text: '标题2', link: '/' }
+            ]
+          }
         ]
       },
-      { text: '最近更新', link: '/toc' },
+      { text: '菜单', items: [
+          {
+            // 也可以省略标题
+            items: [
+              { text: 'Section A Item A', link: '/' },
+              { text: 'Section B Item B', link: '...' }
+            ]
+          }
+        ]
+      },
+            {
+        text: 'Blog',
+        link: 'https://www.spawns.cn/',
+        //target: '__self', 表示直接在当前窗口打开 '_blank'表示新标签页打开
+        target: '_blank',
+        rel: 'external'
+      }
     ],
   sidebar,
   },
