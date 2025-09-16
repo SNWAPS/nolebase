@@ -347,11 +347,46 @@ async function processDocs(docs: string[], docsMetadata: DocsMetadata) {
 /**
  * 主要的运行函数
  * 支持处理多个文档目录，按文件夹分组显示
+ * 新增：支持手动分配文件夹图标
  */
 async function run() {
   const docsMetadata: DocsMetadata = { docs: [], sidebar: [], tags: [] }
   
   console.log(`开始处理文档目录: ${include.join(', ')}`)
+  
+  // 手动图标配置 - 你可以在这里自定义每个文件夹的图标
+  const folderIcons: Record<string, string> = {
+    // ============= 手动配置区域 =============
+    // 在这里添加你的文件夹图标配置
+    // 格式: '文件夹名称': '图标',
+    
+    '阿萨德': '⚡',        // 闪电图标
+    '数据库': '🗄️',       // 数据库图标
+    '知识库': '📚',       // 书籍图标
+    '文档': '📄',         // 文档图标
+    '教程': '🎓',         // 教学图标
+    '笔记': '📝',         // 笔记图标
+    '项目': '🚀',         // 项目图标
+    '工具': '🔧',         // 工具图标
+    '配置': '⚙️',         // 配置图标
+    '代码': '💻',         // 代码图标
+    '资源': '📦',         // 资源图标
+    '图片': '🖼️',         // 图片图标
+    '视频': '🎬',         // 视频图标
+    '音频': '🎵',         // 音频图标
+    '备份': '💾',         // 备份图标
+    '测试': '🧪',         // 测试图标
+    '日志': '📋',         // 日志图标
+    '模板': '🎨',         // 模板图标
+    '脚本': '📜',         // 脚本图标
+    '数据': '📊',         // 数据图标
+    
+    // ============= 自定义区域 =============
+    // 在这里添加你自己的文件夹和图标
+    // '我的文件夹': '🎯',
+    // '工作文档': '💼',
+    // '学习资料': '📖',
+  }
   
   // 为每个目录创建分组
   for (const targetDir of include) {
@@ -368,11 +403,14 @@ async function run() {
     
     now = (new Date()).getTime()
     
+    // 获取手动配置的图标，如果没有配置则使用默认图标
+    const folderIcon = folderIcons[targetDir] || '📁'
+    
     // 创建目录分组
     const dirGroup: ArticleTree = {
       index: targetDir,
-      text: `📁 ${targetDir}`,  // 添加文件夹图标
-      collapsed: false,        // 默认展开当前目录
+      text: `${folderIcon} ${targetDir}`,  // 使用手动配置的图标
+      collapsed: true,        // 是否默认折叠目录
       items: []
     }
     
