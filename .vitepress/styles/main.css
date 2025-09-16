@@ -80,7 +80,7 @@ html, body {
   font-family: 'tengwarannatar-bold';
 }
 
-/* 首页子标题样式 - 添加动态渐变效果 */
+/* 首页子标题样式 - 与按钮完全同步的动态渐变效果 */
 .VPHomeHero > .container > .main > .text {
   font-size: 3.5rem;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -93,13 +93,14 @@ html, body {
   font-weight: 700;
   letter-spacing: 1px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 首页介绍样式 - 添加动态渐变效果 */
+/* 首页介绍样式 - 与按钮完全同步的动态渐变效果 */
 .VPHomeHero > .container > .main > .tagline {
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: rainbowGradient 10s ease infinite;
+  animation: rainbowGradient 8s ease infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -107,17 +108,41 @@ html, body {
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: 10px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 便签悬停效果 - 增强动画 */
+/* 首页标题 - 也与按钮同步 */
+.VPHomeHero > .container > .main > h1 {
+  font-size: 3.5rem;
+  font-family: 'tengwarannatar-bold';
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: rainbowGradient 8s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 便签悬停效果 - 与按钮同步的缩放和光影效果 */
 .VPHomeHero > .container > .main > .text:hover,
-.VPHomeHero > .container > .main > .tagline:hover {
+.VPHomeHero > .container > .main > .tagline:hover,
+.VPHomeHero > .container > .main > h1:hover {
+  transform: translateY(-3px) scale(1.02);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation-duration: 4s;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
 }
 
-/* 首页标题也添加渐变效果 */
+/* 按钮悬停效果 - 增强动画、缩放和光影 */
+.VPHero.VPHomeHero .actions a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* 首页标题也添加动态渐变效果 */
 .VPHomeHero > .container > .main > h1 {
   font-size: 3.5rem;
   font-family: 'tengwarannatar-bold';
