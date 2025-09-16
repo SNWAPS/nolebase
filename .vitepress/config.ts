@@ -210,7 +210,7 @@ export default defineConfig({
     },
      nav: [
       { text: '主页', link: '/' },
-      { text: '数据库', link: '/数据库/' },
+      { text: '数据库1', link: '/数据库1/' },
       { text: '最近更新', link: '/toc' },
       { text: '菜单', items: [
           { text: '标题1', link: '/' },
