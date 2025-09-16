@@ -10,9 +10,9 @@ import matter from 'gray-matter'
 import uniq from 'lodash/uniq'
 import TagsAlias from '../.vitepress/docsTagsAlias.json'
 import type { ArticleTree, DocsMetadata, DocsTagsAlias, Tag } from './types/metadata'
+import { include } from '../metadata/index'
 
 const dir = './'
-const target = '数据库/'
 const folderTop = true
 
 export const DIR_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -53,10 +53,11 @@ export async function listPages(dir: string, options: { target?: string, ignore?
  * 添加和计算路由项
  * @param indexes 路由树
  * @param path 路径
+ * @param target 目标目录
  * @param upgradeIndex 是否升级 index
  * @returns 路由树
  */
-async function addRouteItem(indexes: ArticleTree[], path: string, upgradeIndex = false) {
+async function addRouteItem(indexes: ArticleTree[], path: string, target: string, upgradeIndex = false) {
   const suffixIndex = path.lastIndexOf('.')
   const nameStartsAt = path.lastIndexOf('/') + 1
   const title = path.slice(nameStartsAt, suffixIndex)
@@ -77,7 +78,7 @@ async function addRouteItem(indexes: ArticleTree[], path: string, upgradeIndex =
   if (linkItems.length === 1)
     return
 
-  indexes = addRouteItemRecursion(indexes, item, linkItems, upgradeIndex)
+  indexes = addRouteItemRecursion(indexes, item, linkItems, target, upgradeIndex)
 }
 
 /**
@@ -85,10 +86,11 @@ async function addRouteItem(indexes: ArticleTree[], path: string, upgradeIndex =
  * @param indexes 路由树
  * @param item 路由项
  * @param path 路径
+ * @param target 目标目录
  * @param upgradeIndex 是否升级 index
  * @returns 路由树
  */
-function addRouteItemRecursion(indexes: ArticleTree[], item: any, path: string[], upgradeIndex: boolean) {
+function addRouteItemRecursion(indexes: ArticleTree[], item: any, path: string[], target: string, upgradeIndex: boolean) {
   if (path.length === 1) {
     indexes.push(item)
     return indexes
@@ -118,7 +120,7 @@ function addRouteItemRecursion(indexes: ArticleTree[], item: any, path: string[]
     }
     else {
       // 否则，递归遍历
-      obj.items = addRouteItemRecursion(obj.items ?? [], item, path, upgradeIndex)
+      obj.items = addRouteItemRecursion(obj.items ?? [], item, path, target, upgradeIndex)
     }
 
     return indexes
@@ -129,10 +131,11 @@ function addRouteItemRecursion(indexes: ArticleTree[], item: any, path: string[]
  * 处理 docsMetadata.sidebar，拼接 sidebar 路由树
  * @param docs 符合 glob 的文件列表
  * @param docsMetadata docsMetadata.json 的内容
+ * @param target 目标目录
  */
-async function processSidebar(docs: string[], docsMetadata: DocsMetadata) {
+async function processSidebar(docs: string[], docsMetadata: DocsMetadata, target: string) {
   await Promise.all(docs.map(async (docPath: string) => {
-    await addRouteItem(docsMetadata.sidebar, docPath)
+    await addRouteItem(docsMetadata.sidebar, docPath, target)
   }))
 }
 
@@ -341,26 +344,62 @@ async function processDocs(docs: string[], docsMetadata: DocsMetadata) {
   }))
 }
 
+/**
+ * 主要的运行函数
+ * 支持处理多个文档目录，按文件夹分组显示
+ */
 async function run() {
-  let now = (new Date()).getTime()
-  const docs = await listPages(dir, { target })
-  console.log('listed pages in', `${(new Date()).getTime() - now}ms`)
-  now = (new Date()).getTime()
-
   const docsMetadata: DocsMetadata = { docs: [], sidebar: [], tags: [] }
-
-  await processDocs(docs, docsMetadata)
-  console.log('processed docs in', `${(new Date()).getTime() - now}ms`)
-  now = (new Date()).getTime()
-
-  await processSidebar(docs, docsMetadata)
-  console.log('processed sidebar in', `${(new Date()).getTime() - now}ms`)
-  now = (new Date()).getTime()
-
+  
+  console.log(`开始处理文档目录: ${include.join(', ')}`)
+  
+  // 为每个目录创建分组
+  for (const targetDir of include) {
+    const targetPath = `${targetDir}/`
+    console.log(`\n正在处理目录: ${targetDir}`)
+    
+    let now = (new Date()).getTime()
+    const docs = await listPages(dir, { target: targetPath })
+    console.log(`  - 发现 ${docs.length} 个Markdown文件 (${(new Date()).getTime() - now}ms)`)
+    
+    now = (new Date()).getTime()
+    await processDocs(docs, docsMetadata)
+    console.log(`  - 处理文档完成 (${(new Date()).getTime() - now}ms)`)
+    
+    now = (new Date()).getTime()
+    
+    // 创建目录分组
+    const dirGroup: ArticleTree = {
+      index: targetDir,
+      text: `📁 ${targetDir}`,  // 添加文件夹图标
+      collapsed: false,        // 默认展开当前目录
+      items: []
+    }
+    
+    // 处理该目录的文档到分组中
+    await processSidebar(docs, { sidebar: dirGroup.items } as DocsMetadata, targetPath)
+    
+    // 添加到主侧边栏
+    docsMetadata.sidebar.push(dirGroup)
+    console.log(`  - 处理侧边栏完成 (${(new Date()).getTime() - now}ms)`)
+  }
+  
+  // 最后统一排序
+  console.log('\n正在排序侧边栏...')
+  let now = (new Date()).getTime()
   docsMetadata.sidebar = sidebarSort(docsMetadata.sidebar, folderTop)
-  console.log('processed sidebar sort in', `${(new Date()).getTime() - now}ms`)
-
+  console.log(`排序完成 (${(new Date()).getTime() - now}ms)`)
+  
+  // 输出统计信息
+  console.log(`\n处理完成:`)
+  console.log(`- 总文档数: ${docsMetadata.docs.length}`)
+  console.log(`- 总标签数: ${docsMetadata.tags.length}`)
+  console.log(`- 目录数: ${include.length}`)
+  console.log(`- 侧边栏项目数: ${docsMetadata.sidebar.length}`)
+  
+  now = (new Date()).getTime()
   await fs.writeJSON(join(DIR_VITEPRESS, 'docsMetadata.json'), docsMetadata, { spaces: 2 })
+  console.log(`\n写入 docsMetadata.json 完成 (${(new Date()).getTime() - now}ms)`)
 }
 
 run().catch((err) => {

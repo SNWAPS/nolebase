@@ -4,7 +4,7 @@ export const siteShortName = 'SPAWNS的数据库'
 export const siteDescription = 'SPAWNS的数据库'
 
 /** 文档所在目录 */
-export const include = ['数据库','阿萨德']
+export const include = ['数据库','阿萨德','11123']
 /** Repo */
 export const githubRepoLink = 'https://github.com/SNWAPS'
 /** Discord */
