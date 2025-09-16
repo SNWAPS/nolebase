@@ -212,34 +212,35 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '数据库', link: '/数据库/' },
       { text: '最近更新', link: '/toc' },
+      { text: '菜单', items: [
+          { text: '标题1', link: '/' },
+          { text: '标题2', link: '/' },
+          { text: '标题3', link: '/' },
+          { text: '标题4', link: '/' }]
+      },
       { text: '子标题嵌套', items: [
           {
-            // 
-            text: '子标题',
+            text: '子标题1',
             items: [
               { text: '标题1', link: '/' },
-              { text: '标题2', link: '/' }
+              { text: '标题2', link: '/' },
+              { text: '标题3', link: '/' },
+              { text: '标题4', link: '/' },
+              { text: 'Blog', link: 'https://www.spawns.cn/',target: '_blank',rel: 'external'}
+              //target: '__self', 表示直接在当前窗口打开 '_blank'表示新标签页打开
             ]
-          }
-        ]
-      },
-      { text: '菜单', items: [
+          },
           {
-            // 也可以省略标题
+            text: '子标题2',
             items: [
-              { text: 'Section A Item A', link: '/' },
-              { text: 'Section B Item B', link: '...' }
+              { text: '标题1', link: '/' },
+              { text: '标题2', link: '/' },
+              { text: '标题3', link: '/' },
+              { text: '标题4', link: '/' }
             ]
           }
         ]
       },
-            {
-        text: 'Blog',
-        link: 'https://www.spawns.cn/',
-        //target: '__self', 表示直接在当前窗口打开 '_blank'表示新标签页打开
-        target: '_blank',
-        rel: 'external'
-      }
     ],
   sidebar,
   },
