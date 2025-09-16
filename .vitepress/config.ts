@@ -10,7 +10,47 @@ import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 import { siteDescription, siteName, targetDomain } from '../metadata'
 import { creatorNames, creatorUsernames } from './creators'
-import { sidebar } from './docsMetadata.json'
+import { sidebar as fullSidebar } from './docsMetadata.json'
+
+// 动态侧边栏函数
+export function getSidebar(database: string) {
+  // 深拷贝完整侧边栏，避免修改原始数据
+  const sidebarCopy = JSON.parse(JSON.stringify(fullSidebar))
+  
+  // 过滤和处理侧边栏项目
+  return sidebarCopy.map((item: any) => {
+    // 如果项目没有items，直接返回
+    if (!item.items) return item
+    
+    // 过滤items数组，只保留指定数据库的项目
+    const filteredItems = item.items.filter((subItem: any) => {
+      // 检查link是否包含指定数据库路径
+      return subItem.link?.includes(`/${database}/`)
+    })
+    
+    // 如果子项目也有items，继续过滤
+    const processedItems = filteredItems.map((subItem: any) => {
+      if (subItem.items) {
+        return {
+          ...subItem,
+          items: subItem.items.filter((deepItem: any) => 
+            deepItem.link?.includes(`/${database}/`)
+          )
+        }
+      }
+      return subItem
+    })
+    
+    // 返回处理后的项目，只有当有子项目时才保留
+    return {
+      ...item,
+      items: processedItems
+    }
+  }).filter((item: any) => 
+    // 移除没有items的顶层项目
+    item.items && item.items.length > 0
+  )
+}
 
 export default defineConfig({
   vue: {
@@ -211,7 +251,9 @@ export default defineConfig({
      nav: [
       { text: '主页', link: '/' },
       { text: '数据库1', link: '/数据库1/' },
-      { text: '最近更新', link: '/toc' },
+      { text: '数据库3', link: '/数据库3/' },
+      { text: '数据库4', link: '/数据库4/' },
+    { text: '最近更新', link: '/toc' },
       { text: '菜单', items: [
           { text: '标题1', link: '/' },
           { text: '标题2', link: '/' },
@@ -242,7 +284,16 @@ export default defineConfig({
         ]
       },
     ],
-  sidebar,
+  sidebar: {
+    // 默认侧边栏 - 数据库
+    '/': getSidebar('数据库'),
+    // 数据库1的侧边栏
+    '/数据库1/': getSidebar('数据库1'),
+    // 数据库3的侧边栏
+    '/数据库3/': getSidebar('数据库3')
+  
+    "/数据库4/": getSidebar('数据库4'),
+},
   },
   markdown: {
     theme: {
