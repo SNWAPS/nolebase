@@ -209,7 +209,6 @@ export default defineConfig({
       },
     },
      nav: [
-      { text: '最近更新', link: '/toc' },
       { text: '子标题嵌套', items: [
           {
             text: '子标题1',
@@ -231,7 +230,8 @@ export default defineConfig({
             ]
           }
         ]
-      }
+      },
+      { text: '最近更新', link: '/toc' }
     ],
   sidebar,
   },

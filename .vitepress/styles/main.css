@@ -80,13 +80,56 @@ html, body {
   font-family: 'tengwarannatar-bold';
 }
 
-/* 首页子标题样式 */
+/* 首页子标题样式 - 添加动态渐变效果 */
 .VPHomeHero > .container > .main > .text {
   font-size: 3.5rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: rainbowGradient 8s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* 首页介绍样式 */
+/* 首页介绍样式 - 添加动态渐变效果 */
 .VPHomeHero > .container > .main > .tagline {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  animation: rainbowGradient 10s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
+/* 便签悬停效果 - 增强动画 */
+.VPHomeHero > .container > .main > .text:hover,
+.VPHomeHero > .container > .main > .tagline:hover {
+  animation-duration: 4s;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* 首页标题也添加渐变效果 */
+.VPHomeHero > .container > .main > h1 {
+  font-size: 3.5rem;
+  font-family: 'tengwarannatar-bold';
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+  background-size: 400% 400%;
+  animation: rainbowGradient 12s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 /* 自适应样式 */
@@ -188,7 +231,7 @@ html, body {
   font-size: 18px;
   min-width: 160px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 16px;
   font-weight: 700;
   letter-spacing: 1px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -289,7 +332,7 @@ html, body {
   background: linear-gradient(45deg, #ff0080, #ff8c00, #ffd700, #00ff80, #0080ff, #8000ff);
   background-size: 600% 600%;
   animation: borderRainbow 6s ease infinite;
-  border-radius: 14px;
+  border-radius: 16px;
   z-index: -1;
   opacity: 0;
   transition: opacity 0.4s ease;
