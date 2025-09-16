@@ -12,11 +12,7 @@ import TagsAlias from '../.vitepress/docsTagsAlias.json'
 import type { ArticleTree, DocsMetadata, DocsTagsAlias, Tag } from './types/metadata'
 
 const dir = './'
-// 从metadata/index.ts导入include配置
-import { include } from '../metadata/index.js'
-
-// 将include数组转换为target数组
-const targets = include.map(dir => `${dir}/`)
+const target = '数据库/'
 const folderTop = true
 
 export const DIR_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -73,16 +69,10 @@ async function addRouteItem(indexes: ArticleTree[], path: string, upgradeIndex =
   const linkItems = item.link.split('/')
   linkItems.shift()
 
-  // 找到匹配的目标目录并从路径中移除
-  for (const target of targets) {
-    if (item.link.includes(`/${target}`)) {
-      target.split('/').forEach((item) => {
-        if (item)
-          linkItems.shift()
-      })
-      break
-    }
-  }
+  target.split('/').forEach((item) => {
+    if (item)
+      linkItems.shift()
+  })
 
   if (linkItems.length === 1)
     return
@@ -353,26 +343,17 @@ async function processDocs(docs: string[], docsMetadata: DocsMetadata) {
 
 async function run() {
   let now = (new Date()).getTime()
-  const allDocs: string[] = []
-  
-  // 处理每个目标目录
-  for (const target of targets) {
-    const docs = await listPages(dir, { target })
-    allDocs.push(...docs)
-    console.log(`listed pages for ${target} in`, `${(new Date()).getTime() - now}ms`)
-    now = (new Date()).getTime()
-  }
-  
-  // 去重（防止重复文件）
-  const uniqueDocs = [...new Set(allDocs)]
+  const docs = await listPages(dir, { target })
+  console.log('listed pages in', `${(new Date()).getTime() - now}ms`)
+  now = (new Date()).getTime()
 
   const docsMetadata: DocsMetadata = { docs: [], sidebar: [], tags: [] }
 
-  await processDocs(uniqueDocs, docsMetadata)
+  await processDocs(docs, docsMetadata)
   console.log('processed docs in', `${(new Date()).getTime() - now}ms`)
   now = (new Date()).getTime()
 
-  await processSidebar(uniqueDocs, docsMetadata)
+  await processSidebar(docs, docsMetadata)
   console.log('processed sidebar in', `${(new Date()).getTime() - now}ms`)
   now = (new Date()).getTime()
 
