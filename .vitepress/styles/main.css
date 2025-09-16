@@ -80,12 +80,12 @@ html, body {
   font-family: 'tengwarannatar-bold';
 }
 
-/* 首页子标题样式 - 与按钮完全同步的动态渐变效果 */
+/* 首页子标题样式 - 同步的柔和彩虹渐变效果 */
 .VPHomeHero > .container > .main > .text {
   font-size: 3.5rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
   background-size: 400% 400%;
-  animation: rainbowGradient 8s ease infinite;
+  animation: rainbowGradient 10s ease infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -96,11 +96,11 @@ html, body {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 首页介绍样式 - 与按钮完全同步的动态渐变效果 */
+/* 首页介绍样式 - 同步的柔和彩虹渐变效果 */
 .VPHomeHero > .container > .main > .tagline {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
   background-size: 400% 400%;
-  animation: rainbowGradient 8s ease infinite;
+  animation: rainbowGradient 10s ease infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,13 +111,13 @@ html, body {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 首页标题 - 也与按钮同步 */
+/* 首页标题样式 - 同步的柔和彩虹渐变效果 */
 .VPHomeHero > .container > .main > h1 {
   font-size: 3.5rem;
   font-family: 'tengwarannatar-bold';
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
   background-size: 400% 400%;
-  animation: rainbowGradient 8s ease infinite;
+  animation: rainbowGradient 10s ease infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -142,13 +142,13 @@ html, body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
 
-/* 首页标题也添加动态渐变效果 */
+/* 首页标题样式 - 同步的柔和彩虹渐变效果 */
 .VPHomeHero > .container > .main > h1 {
   font-size: 3.5rem;
   font-family: 'tengwarannatar-bold';
   background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
   background-size: 400% 400%;
-  animation: rainbowGradient 12s ease infinite;
+  animation: rainbowGradient 10s ease infinite;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -250,7 +250,54 @@ html, body {
   text-decoration: underline;
 }
 
-/* 美化首页按钮 - 添加超级动态渐变效果 */
+/* 首页子标题样式 - 同步的柔和彩虹渐变效果 */
+.VPHomeHero > .container > .main > .text {
+  font-size: 3.5rem;
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+  background-size: 400% 400%;
+  animation: rainbowGradient 10s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 首页介绍样式 - 同步的柔和彩虹渐变效果 */
+.VPHomeHero > .container > .main > .tagline {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+  background-size: 400% 400%;
+  animation: rainbowGradient 10s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 首页标题样式 - 柔和的彩虹渐变效果 */
+.VPHomeHero > .container > .main > h1 {
+  font-size: 3.5rem;
+  font-family: 'tengwarannatar-bold';
+  background: linear-gradient(-45deg, #a8edea, #fed6e3, #d299c2, #fef9d7);
+  background-size: 400% 400%;
+  animation: rainbowGradient 12s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 按钮 - 同步的柔和彩虹渐变效果 */
 .VPHero.VPHomeHero .actions a {
   padding: 14px 28px;
   font-size: 18px;
@@ -263,9 +310,9 @@ html, body {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
   background-size: 400% 400%;
-  animation: rainbowGradient 8s ease infinite;
+  animation: rainbowGradient 10s ease infinite;
   color: white;
   border: none;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -346,7 +393,7 @@ html, body {
   }
 }
 
-/* 添加边框渐变动画 */
+/* 添加边框渐变动画 - 同步版本 */
 .VPHero.VPHomeHero .actions a::after {
   content: '';
   position: absolute;
@@ -354,9 +401,9 @@ html, body {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, #ff0080, #ff8c00, #ffd700, #00ff80, #0080ff, #8000ff);
+  background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
   background-size: 600% 600%;
-  animation: borderRainbow 6s ease infinite;
+  animation: borderRainbow 10s ease infinite;
   border-radius: 16px;
   z-index: -1;
   opacity: 0;
