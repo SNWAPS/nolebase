@@ -181,3 +181,31 @@ html, body {
 .vp-doc a:hover {
   text-decoration: underline;
 }
+
+/* 增大首页按钮尺寸 */
+/* 美化首页按钮 - 添加圆角、阴影和动画效果 */
+.VPHero.VPHomeHero .actions a {
+  padding: 12px 24px;
+  font-size: 16px;
+  min-width: 140px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 按钮悬停美化效果 - 添加浮动和更强阴影 */
+.VPHero.VPHomeHero .actions a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 按钮点击效果 - 恢复原始位置 */
+.VPHero.VPHomeHero .actions a:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
