@@ -36,7 +36,7 @@ export const creators: Creator[] = [
     avatar: '',
     username: 'nano',
     title: '一个人的时间精力毕竟是有限的',
-    desc: '影分身',
+    desc: '',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/SNWAPS' },
     ],

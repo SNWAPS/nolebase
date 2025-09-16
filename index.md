@@ -14,6 +14,9 @@ hero:
     - theme: brand
       text: 开始检索
       link: /数据库/index
+    - theme: alt
+      text: 点点点
+      link: 
 features:
   - title: 世事难料，我不知道。
     details: 配电自动化与相关技术的理论分享<br />涵盖配电网一二次电气设备的系统运行原理以及运维方法等<br />并涉及智能电网、物联网、嵌入式、前端、后端等技术文章领域。
