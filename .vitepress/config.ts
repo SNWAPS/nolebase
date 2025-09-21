@@ -124,7 +124,15 @@ export default defineConfig({
         defer: '',
         src: 'https://static.cloudflareinsights.com/beacon.min.js',
         'data-cf-beacon': '{"token": "ba0aaa257b3144d58debdb8b6be716d3"}'
-      }
+      },
+     // HanAnalytics
+      [
+        'script',
+        {
+          defer: '',
+          src: 'https://hananalytics-ahx.pages.dev/tracker.min.js',
+          'data-website-id': '数据库'
+        }
     ],
     ['meta', {
       name: 'msapplication-TileColor',
