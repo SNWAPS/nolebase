@@ -133,6 +133,12 @@ export default defineConfig({
     // Proxying Plausible through Netlify | Plausible docs
     // https://plausible.io/docs/proxy/guides/netlify
     ['script', { 'defer': 'true', 'data-domain': 'nolebase.ayaka.io', 'data-api': '/api/v1/page-external-data/submit', 'src': '/assets/page-external-data/js/script.js' }],
+    // HanAnalytics网站分析追踪
+    ['script', { 
+      'defer': '', 
+      'src': 'https://hananalytics-ahx.pages.dev/tracker.min.js', 
+      'data-website-id': '数据库' 
+    }],
   ],
   themeConfig: {
     outline: { label: 'On this page', level: 'deep' },
