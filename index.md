@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 开始检索
-      link: /数据库/index
+      link: /数据库/更新日志/index
     - theme: alt
       text: 待用用
       link: 

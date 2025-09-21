@@ -147,6 +147,11 @@ export default defineConfig({
       copyright:
         'Copyright © 2025 SPAWNS. All Rights Reserved. ',
     },
+    // 禁用文档页脚的上一页下一页导航
+    docFooter: {
+      prev: false,
+      next: false,
+    },
     search: {
       provider: 'local',
       options: {
