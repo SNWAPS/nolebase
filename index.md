@@ -6,7 +6,7 @@ titleTemplate: 世事难料，诸位慢行
 hero:
   name: 
   text:  无聊的数据库
-  tagline: 配电自动化、智能电网、嵌入式等运维理论知识数据库
+  tagline: 配电自动化、智能电网、嵌入式等纯理论知识数据库
   image:
     src: /tx.webp
     alt: Vitest
