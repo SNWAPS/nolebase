@@ -109,8 +109,7 @@ export default defineConfig({
       'link',
       {
         rel: 'mask-icon',
-        href: '/safari-pinned-tab.svg',
-        color: '#927baf',
+        href: '/tx.webp',
       },
     ],
     ['link', {
